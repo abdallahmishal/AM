@@ -19,9 +19,17 @@ body {
 
 .btn {
   color: white;
-  background-color: black;
+  background-color: #272e45;
   padding: 5px 50px;
   cursor: pointer;
+  -webkit-text-fill-color: white;
+}
+.btn-container {
+  color: #272e45;
+  background-color: white;
+  padding: 5px 30px;
+  cursor: pointer;
+  -webkit-text-fill-color: #272e45;
 }
 
 .side {
@@ -37,11 +45,12 @@ body {
 }
 
 .right-side {
-  background-color: #edf0f2;
+  background-color: #272e45;
 }
 
 .left-side .container {
   text-align: center;
+  -webkit-text-fill-color: #272e45;
 }
 
 .left-side .container > img:first-child {
@@ -60,6 +69,7 @@ body {
 
 .right-side .container {
   text-align: center;
+  -webkit-text-fill-color: white;
 }
 
 .right-side .container p {
@@ -93,6 +103,6 @@ body {
     height: 100vh;
   }
   .right-side {
-    padding: 40px 30px
+    padding: 40px 30px;
   }
 }
