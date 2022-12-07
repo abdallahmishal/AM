@@ -92,7 +92,7 @@ body {
   left: 17px;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 820px) {
   body {
     flex-direction: column;
     gap: 40px;
