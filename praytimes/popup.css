@@ -16,6 +16,9 @@
     body{
         color: #BBD6B8 ;
         background-color: FFBF9B;
+         justify-content: center;
+        align-items: center;
+        display: flex;
 
     }
     button {
