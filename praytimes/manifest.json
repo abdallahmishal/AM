@@ -1,0 +1,22 @@
+{
+"manifest_version": 3,
+"name":"prayer time",
+"description":"show pray time",
+"version":"1.0",
+"icons":{
+    "16":"/images/beads16.png",
+    "64":"/images/beads64.png",
+    "128":"/images/beads128.png",
+    "256":"/images/beads256.png"
+        },
+"action":{
+    "default_icon":{
+    "16":"/images/beads-16.png",
+    "64":"/images/beads-64.png",
+    "128":"/images/beads-128.png",
+    "256":"/images/beads-256.png"
+                   },
+    "default_popup":"popup.html"
+               
+              }              
+}

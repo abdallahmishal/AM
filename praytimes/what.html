@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>تحديد المنطقة</title>
+  </head>
+  <body>
+    <h1>تحديد المنطقة</h1>
+    <label for="region">المنطقة:</label>
+    <select id="region" name="region">
+      <option value="north">الشمال</option>
+      <option value="south">الجنوب</option>
+      <option value="east">الشرق</option>
+      <option value="west">الغرب</option>
+    </select>
+    <br>
+    <button onclick="getLocation()">تحديد الموقع الحالي</button>
+    <div id="map"></div>
+    <script>
+      function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+          alert("متصفحك لا يدعم Geolocation API");
+        }
+      }
+
+      function showPosition(position) {
+        var lat = position.coords.latitude;
+        var lng = position.coords.longitude;
+        var mapOptions = {
+          center: new google.maps.LatLng(lat, lng),
+          zoom: 10
+        };
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(lat, lng),
+          map: map
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+  </body>
+</html>
