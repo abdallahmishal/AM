@@ -3,11 +3,11 @@ var now = new Date().getTime();
 
 // Prayer times
 var prayerTimes = [
-  { name: "Fajr", time: "05:06" },
-  { name: "Dhuhr", time: "12:27" },
-  { name: "Asr", time: "15:53" },
-  { name: "Maghrib", time: "18:33" },
-  { name: "Isha", time: "20:33" }
+  { name: "Fajr", time: "04:51" },
+  { name: "Dhuhr", time: "12:23" },
+  { name: "Asr", time: "15:48" },
+  { name: "Maghrib", time: "18:37" },
+  { name: "Isha", time: "20:37" }
 ];
 
 // Next prayer time and countdown time to the next prayer
